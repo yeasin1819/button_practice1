@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,17 +39,15 @@ class MyAppState extends State<MyApp> {
             Text(question[ansindex]),
             RaisedButton(
               child: Text("Green"),
-              onPressed: () {
-                print("ans is green");
-              },
+              onPressed: ansIndex
             ),
             RaisedButton(
               child: Text("Blue"),
-              onPressed: () => print("Blue"),
+              onPressed: ansIndex,
             ),
             RaisedButton(
               child: Text("Black"),
-              onPressed: () => print("Black"),
+              onPressed: ansIndex,
             )
           ],
         ),
